@@ -1,0 +1,138 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Arial" ,sans-serif;
+}
+
+.dropdown {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+.dropdown--open .nav_sub_list {
+  display: inline-flex;
+}
+.select-opener {
+  font-family: "Open Sans", sans-serif;
+  background-color: #00bafc;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 2px 40px;
+  display: inline-block;
+  cursor: pointer;
+}
+.nav_sub_list {
+  display: none;
+  flex-direction: column;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  background: #ffffff;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  overflow: hidden;
+}
+.nav_sub_item {
+  color: #000000;
+  padding: 4px 12px;
+  white-space: nowrap;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  cursor: pointer;
+}
+
+.nav_sub_item:hover {
+  background: #00bafc;
+  color: #ffffff;
+}
+.carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+.carousel__inner {
+  max-width: 1000px;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  border-radius: 20px;
+}
+.carousel__list{
+  display: flex;
+}
+.carousel__item {
+  position: relative;
+  /* transform: translateX(-1000px); */
+  /* transition: */
+}
+.carousel__item-img {
+  display: block;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.carousel__item-title{
+  text-align: center;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 0;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+
+
+.carousel__btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  outline: none;
+}
+.carousel__btn--disable{
+  pointer-events: none;
+  opacity: 0.2;
+}
+.carousel__btn--prev{
+  left: 0;
+  transform: translate(50%,-50%)
+}
+.carousel__btn--next{
+  right: 0;
+  transform: translate(-50%,-50%)
+}
+
+.carousel__indicators{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.carousel__indicators-btn{
+  padding: 0;
+  border: none;
+  background-color: #fff;
+  width: 30px;
+  height: 3px;
+  margin-left: 2px;
+  margin-right: 2px;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+.carousel__indicators-btn--active{
+  height: 5px;
+  width: 40px;
+  background-color: rgba(0, 0, 0, 0.6);
+}

@@ -1,12 +1,13 @@
-import "./components/styles/css/styles.css";
-
+import "./components/css/styles.css";
+import Dropdown from "./components/Dropdown";
+import Carousel from "./components/Carousel";
 const App = () => {
-
   return (
-    <div className="container">
-    </div>
-  )
-
-}
+    <>
+      {/* <Dropdown /> */}
+      <Carousel />
+    </>
+  );
+};
 
 export default App;
